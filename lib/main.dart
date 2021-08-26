@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clonecoding/screen/home_screen.dart';
 import 'package:netflix_clonecoding/screen/more_screen.dart';
+import 'package:netflix_clonecoding/screen/search_screen.dart';
 import 'package:netflix_clonecoding/widget/bottom_bar.dart';
 
 void main() {
@@ -33,11 +34,7 @@ class _MyAppState extends State<MyApp> {
             // NeverScrollableScrollPhysics : 손가락으로 swipe 해서 탭 전환 불가
             children: [
               HomeScreen(),
-              Container(
-                child: Center(
-                  child: Text('search'),
-                ),
-              ),
+              SearchScreen(),
               Container(
                 child: Center(
                   child: Text('save'),
